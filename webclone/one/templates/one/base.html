@@ -1,8 +1,39 @@
+{% load static %}
 <html>
 <head>
     <title>Clone</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'one/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+    <nav>
+    <ul>
+        <div class="container nav-wrapper">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        </div>
+      </ul>
+    </nav>
     <h1>Daddy's app</h1>
+<div class="row flex-container center" >
+    <div class="col s3">
+        <div class="center">
+        <div class="large material-icons" style=" color: rebeccapurple; font-size:120px;">flash_on</i></div>
+        </div>
+    </div>
+    <div class="col s3">
+        <div class="center">
+        <div class="large material-icons" style=" color: rebeccapurple; font-size:120px;">flash_on</i></div>
+        </div>  
+    </div>
+    <div class="col s3">
+        <div class="center">
+        <div class="large material-icons" style=" color: rebeccapurple; font-size:120px;">flash_on</i></div>
+        </div>  
+    </div>
+</div>
 </body>
 </html>
