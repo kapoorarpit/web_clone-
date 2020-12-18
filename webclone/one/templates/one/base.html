@@ -17,23 +17,41 @@
         </div>
       </ul>
     </nav>
-    <h1>Daddy's app</h1>
-<div class="row flex-container center" >
-    <div class="col s3">
+<div class="container" >
+    <h1>Daddy's web aap</h1>
+<div class="row " >
+    <div class="col s4">
         <div class="center">
         <div class="large material-icons" style=" color: rebeccapurple; font-size:120px;">flash_on</i></div>
+        <p>This is just an item</p>
         </div>
     </div>
-    <div class="col s3">
+    <div class="col s4">
         <div class="center">
-        <div class="large material-icons" style=" color: rebeccapurple; font-size:120px;">flash_on</i></div>
+        <div class="large material-icons" style=" color: rebeccapurple; font-size:120px;">add_a_photo</i></div>
+        <p>This is just an item</p>
         </div>  
     </div>
-    <div class="col s3">
+    <div class="col s4">
         <div class="center">
-        <div class="large material-icons" style=" color: rebeccapurple; font-size:120px;">flash_on</i></div>
+        <div class="large material-icons" style=" color: rebeccapurple; font-size:120px;">comment</i></div>
+        <p>This is just an item</p>
         </div>  
     </div>
+    <div>
+    <form action="{% url 'search' %}" method="post">
+        {%csrf_token%}
+        <input type="text", name="search", placeholder="search">
+        <button class="btn waves-effect waves-light" type="submit" name="action">send
+            <i class="material-icons right">flash_on</i>
+        </button>
+    </div>
+    </form>
+
+</div>
+    {% block content %}
+
+    {% endblock content %}
 </div>
 </body>
 </html>
